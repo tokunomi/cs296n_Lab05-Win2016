@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -22,6 +23,7 @@ namespace CommInfo.Models
         {
             get { return member; }
         }
+        [StringLength(60)]
         public string Topic { get; set; }
     }
 }
